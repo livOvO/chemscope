@@ -1,0 +1,5 @@
+dist/
+node_modules/
+.edge*/
+_*
+.DS_Store

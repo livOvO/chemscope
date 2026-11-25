@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>化见 ChemScope｜化工热搜与全球化学前沿</title>
+  <meta name="description" content="每天更新的化工产业热点与全球化学前沿论文榜单。用最短的标题，读懂化学工业正在发生什么。">
+  <meta name="theme-color" content="#f3efe5">
+  <meta property="og:title" content="化见 ChemScope｜化工热搜与全球化学前沿">
+  <meta property="og:description" content="从产业热搜到顶刊论文，每天 3 分钟，读懂化学工业正在发生什么。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./data.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#policy">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="化见 ChemScope 首页">
+        <svg class="brand-mark" viewBox="0 0 40 44" aria-hidden="true">
+          <path d="M20 1.8 37 11.5v21L20 42.2 3 32.5v-21L20 1.8Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M20 9.5 30.6 15.6v12.2L20 33.9 9.4 27.8V15.6L20 9.5Z" fill="currentColor" opacity=".12"/>
+          <path d="M25.8 17.1a7.4 7.4 0 1 0 0 9.8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="28.7" cy="22" r="1.7" fill="currentColor"/>
+        </svg>
+        <span class="brand-word"><b>化见</b><span>CHEMSCOPE</span></span>
+      </a>
+      <p class="header-tag">化工的热点，化学的前沿</p>
+      <div class="header-actions">
+        <span class="update-pill" id="updateLabel"><i class="live-dot" aria-hidden="true"></i><span>每日更新</span></span>
+        <button class="refresh-btn" id="refreshBtn" type="button" aria-label="立即刷新数据">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.2 8.2A6.4 6.4 0 1 0 16 12.7M16.2 4.6v3.9h-3.9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>刷新</span>
+        </button>
+        <button class="method-btn" type="button" data-open-method>热度说明</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-rule">
+      <span>DAILY BRIEF · ISSUE 001</span>
+      <span id="todayLabel">2026.11.25</span>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <p class="kicker"><span></span> CHEMISTRY, IN FOCUS</p>
+        <h1 id="heroTitle">看见化工的<span class="mark">今天</span>，<br>也看见化学的<span class="mark">明天</span>。</h1>
+      </div>
+      <div class="hero-aside">
+        <p>从产业热搜到顶刊论文，每天 3 分钟，读懂化学工业正在发生什么。</p>
+        <div class="hero-stats">
+          <span><b id="newsCount">16</b> 条产业热点</span>
+          <span><b id="paperCount">12</b> 篇前沿论文</span>
+        </div>
+        <p class="hero-fine">热度为综合编辑评分，非平台真实互动量。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="policy" aria-labelledby="policyTitle">
+    <div class="feature-glow" aria-hidden="true"></div>
+    <div class="feature-top">
+      <header class="feature-head">
+        <div class="feature-topline">
+          <span class="feature-kicker">POLICY BRIEF · 2026</span>
+          <span class="feature-badge">十五五开局</span>
+        </div>
+        <h2 id="policyTitle">中国化工的<br><em>下一个五年</em></h2>
+        <p class="feature-deck">从“规模第一”走向“价值第一”。</p>
+      </header>
+
+      <p class="feature-lead">2026 年是“十五五”开局之年。规划纲要首次提出“建设能源强国”，明确推动石化产业结构调整、做强做优一流石化基地；政府工作报告又把“国家低碳转型基金”“未来能源”“智能经济新形态”推到台前。中国化工的下一程，不是继续堆产能，而是把规模优势换成技术、绿色与效率优势。</p>
+
+      <div class="metric-grid" aria-label="十五五关键指标">
+        <div class="metric">
+          <b>7%<sup>+</sup></b>
+          <span>研发经费年均增长</span>
+          <small>规划纲要</small>
+        </div>
+        <div class="metric">
+          <b>17%</b>
+          <span>单位 GDP 二氧化碳<br>五年累计下降</span>
+          <small>规划纲要</small>
+        </div>
+        <div class="metric">
+          <b>58<sup>亿吨</sup></b>
+          <span>能源综合生产能力<br>（标准煤，2030）</span>
+          <small>规划纲要</small>
+        </div>
+        <div class="metric">
+          <b>2<sup>亿吨</sup></b>
+          <span>原油年产量<br>稳定在</span>
+          <small>规划纲要</small>
+        </div>
+      </div>
+      <p class="metric-foot">另有 <b>109 项</b>重大工程。与化工直接相关的“高端新材料工程”及四类重点材料，来自中国化工信息周刊的业界解读，非规划原文单列。</p>
+    </div>
+
+    <section class="feature-section">
+      <div class="section-head"><span>01</span><h3>四条主线</h3></div>
+      <div class="trend-list">
+        <article class="trend">
+          <span class="trend-index">A</span>
+          <div>
+            <h4>结构之变：从“内卷”到“出清”</h4>
+            <p>规划明确综合整治“内卷式”竞争、推动落后低效产能有序退出，同时做强做优一流石化基地。下一轮扩张，必须带着高端牌号和一体化成本来。</p>
+          </div>
+        </article>
+        <article class="trend">
+          <span class="trend-index">B</span>
+          <div>
+            <h4>技术之变：从“补短板”到“建长板”</h4>
+            <p>研发经费年均增长 7% 以上是刚性指标。高端新材料聚焦新能源、电子信息、航空航天<span class="inline-src">业界解读</span>；POE/PBE、特种工程塑料、电子化学品、航空级碳纤维，正从中试走向产业化。</p>
+          </div>
+        </article>
+        <article class="trend">
+          <span class="trend-index">C</span>
+          <div>
+            <h4>绿色之变：把碳成本变成碳资产</h4>
+            <p>碳排放总量和强度双控、碳足迹、全国碳市场扩围，叠加国家低碳转型基金。绿色氢氨醇、绿色燃料、CCUS 从示范走向订单；谁先打通绿电、碳数据与绿色认证，谁就拿到下一轮出口入场券。</p>
+          </div>
+        </article>
+        <article class="trend">
+          <span class="trend-index">D</span>
+          <div>
+            <h4>智能之变：AI 从工具变成基础设施</h4>
+            <p>“人工智能+”上升为国家行动。化工的 AI 不是聊天机器人，而是把分子设计、研发、排产、能耗、安全连成一条数据链。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-section">
+      <div class="section-head"><span>02</span><h3>六条赛道</h3></div>
+      <div class="track-grid">
+        <div class="track"><span class="track-no">01</span><b>高端聚烯烃</b><small>POE / PBE / 茂金属</small></div>
+        <div class="track"><span class="track-no">02</span><b>电子化学品</b><small>光刻胶 / 电子特气 / CMP</small></div>
+        <div class="track"><span class="track-no">03</span><b>高性能纤维</b><small>碳纤维 / 芳纶 / 低空经济</small></div>
+        <div class="track"><span class="track-no">04</span><b>绿色氢氨醇</b><small>绿氢 / 绿氨 / 绿色燃料</small></div>
+        <div class="track"><span class="track-no">05</span><b>生物基材料</b><small>PLA / PHA / 平台化合物</small></div>
+        <div class="track"><span class="track-no">06</span><b>AI + 化工</b><small>智能工厂 / 分子模拟 / 碳管理</small></div>
+      </div>
+    </section>
+
+    <section class="feature-section">
+      <div class="section-head"><span>03</span><h3>企业行动清单</h3></div>
+      <ol class="action-list">
+        <li><b>把“反内卷”当战略。</b><span>退出低效产能，聚焦高毛利牌号，用一体化成本打持久战。</span></li>
+        <li><b>把中试当投资。</b><span>建企业主导的创新联合体与中试平台，缩短“实验室—首套装置”的距离。</span></li>
+        <li><b>把碳当资产。</b><span>建碳足迹账本，锁定绿电/绿氢，提前适配 CBAM 等规则。</span></li>
+        <li><b>把 AI 当基础设施。</b><span>从单点自动化走向研发—排产—能耗—安全全链路优化。</span></li>
+      </ol>
+    </section>
+
+    <blockquote class="feature-quote">
+      <span>一句话判断</span>
+      <p>未来五年，中国化工最确定的机会，不在“多产一吨”，而在“多赚一块”。</p>
+    </blockquote>
+
+    <div class="feature-sources">
+      <span>依据</span>
+      <a href="https://www.fujian.gov.cn/zwgk/ztzl/wsyjg/xxzc/zwsc/202603/t20260318_7113069.htm" target="_blank" rel="noopener noreferrer">十五五规划纲要</a>
+      <a href="https://www.gdtzb.gov.cn/yw/zy/content/post_105982.html" target="_blank" rel="noopener noreferrer">2026 政府工作报告</a>
+      <a href="https://www.chemnews.com.cn/c/2026-04-02/773709.shtml" target="_blank" rel="noopener noreferrer">中化信息周刊解读</a>
+      <a href="http://www.jingjiribao.cn/static/detail.jsp?id=620998" target="_blank" rel="noopener noreferrer">经济日报</a>
+    </div>
+    <p class="feature-disclaimer">注：行业目标、赛道与行动建议为基于公开政策的编辑研判，非官方文件；官方指标以原文为准。</p>
+  </section>
+
+  <main class="board board-two" aria-label="化见化工热搜与全球前沿">
+    <section class="panel panel-news" id="news" aria-labelledby="newsTitle">
+      <header class="panel-head">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> INDUSTRY PULSE</p>
+          <h2 id="newsTitle">化工<span>热搜</span></h2>
+        </div>
+        <span class="panel-note">按综合热度</span>
+      </header>
+      <div class="filters" id="newsFilters" role="group" aria-label="时事分类"></div>
+      <ol class="hot-list" id="newsList">
+        <li class="loading-row">正在读取今日榜单…</li>
+      </ol>
+      <footer class="panel-foot">
+        <span id="newsFoot">每日 06:10 更新</span>
+        <button type="button" class="text-btn" data-open-method>热度怎么算？</button>
+      </footer>
+    </section>
+
+    <section class="panel panel-research" id="research" aria-labelledby="researchTitle">
+      <header class="panel-head">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> FRONTIER PAPERS</p>
+          <h2 id="researchTitle">全球<span>前沿</span></h2>
+        </div>
+        <span class="panel-note">按综合热度</span>
+      </header>
+      <div class="filters" id="paperFilters" role="group" aria-label="论文分类"></div>
+      <ol class="paper-list" id="paperList">
+        <li class="loading-row">正在读取今日论文…</li>
+      </ol>
+      <footer class="panel-foot">
+        <span id="paperFoot">Nature · Science · Angew</span>
+        <button type="button" class="text-btn" data-open-method>选文标准</button>
+      </footer>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div>
+        <div class="footer-brand">化见 <span>CHEMSCOPE</span></div>
+        <p>把化工的热点，压缩成每天 3 分钟。</p>
+      </div>
+      <div class="footer-links">
+        <button type="button" data-open-method>热度说明</button>
+        <a href="#policy">十五五专题</a>
+        <a href="#top">回到顶部</a>
+      </div>
+    </div>
+    <p class="footer-fine">本站聚合公开信息，标题与排序为编辑加工；不替代原始文献与官方文件。© 2026 ChemScope.</p>
+  </footer>
+
+  <nav class="mobile-nav" aria-label="页面导航">
+    <a href="#policy" data-nav="policy">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 7l7-4 7 4M5 7v10l7 4 7-4V7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      <span>专题</span>
+    </a>
+    <a href="#news" data-nav="news">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <span>时事</span>
+    </a>
+    <a href="#research" data-nav="research">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3M7.5 16h9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>科研</span>
+    </a>
+  </nav>
+
+  <dialog class="method-dialog" id="methodDialog" aria-labelledby="methodTitle">
+    <div class="dialog-inner">
+      <div class="dialog-head">
+        <span class="eyebrow">METHODOLOGY</span>
+        <button class="dialog-close" type="button" data-close-method aria-label="关闭">×</button>
+      </div>
+      <h2 id="methodTitle">热度不是流量，<br>是编辑判断。</h2>
+      <p>本站没有接入微博、微信或任何平台的真实互动数据。榜单热度是综合编辑评分，用来回答“今天什么更值得看”，不是“谁被讨论得最多”。</p>
+      <ul class="method-list">
+        <li><b>来源权重 · 30%</b><span>行业媒体、顶级期刊、官方机构优先。</span></li>
+        <li><b>时效性 · 25%</b><span>越近发生，权重越高。</span></li>
+        <li><b>话题关注度 · 30%</b><span>产业影响、技术突破、公共议题。</span></li>
+        <li><b>编辑判断 · 15%</b><span>与化工/化学的相关度、信息完整度。</span></li>
+      </ul>
+      <p>每天 06:10 自动刷新；抓取失败时保留上一版快照。标题为编辑提炼，点击可直达原文或 DOI。论文榜单优先收录研究论文，过滤综述、新闻与观点。</p>
+      <div class="dialog-foot">
+        <span id="dialogGenerated">—</span>
+        <button class="btn" type="button" data-close-method>知道了</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <p style="text-align:center;padding:24px">本站需要 JavaScript 才能渲染榜单。请启用后刷新页面。</p>
+  </noscript>
+</body>
+</html>
